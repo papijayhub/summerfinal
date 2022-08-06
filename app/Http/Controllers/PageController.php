@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Inventory;
 
 class PageController extends Controller
 {
@@ -10,7 +11,10 @@ class PageController extends Controller
         return inertia('Home');
     }
     public function track(){
-        return inertia('Track');
+        $inventory = Inventory::with('track')->get();
+        return inertia('Track',[
+            'inventory' => $inventory
+        ]);
     }
     public function about(){
         return inertia('About');

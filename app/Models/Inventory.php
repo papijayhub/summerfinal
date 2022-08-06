@@ -9,7 +9,7 @@ class Inventory extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'type', 'size', 'description'];
+    protected $fillable = ['name','stock', 'type', 'size', 'description'];
 
     public function track() {
          //return $this->belongsTo('App\Model\Tracking');

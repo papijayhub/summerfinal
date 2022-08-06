@@ -17,18 +17,21 @@ class InventorySeeder extends Seeder
         $inventory = [
             [
                 'name' => 'Shein Clothing',
+                'stock' => 34,
                 'type' => 'Suit',
                 'size' => 'Medium',
                 'description' => 'This particular suit is very thick',
             ],
             [
                 'name' => 'Shein Clothing',
+                'stock' => 23,
                 'type' => 'Suit',
                 'size' => 'Medium',
                 'description' => 'This particular suit is very thick',
             ],
             [
                 'name' => 'NJM Clothing',
+                'stock' => 12,
                 'type' => 'Skirt',
                 'size' => 'Small',
                 'description' => 'This particular skirt is revealing',

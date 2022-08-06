@@ -9,10 +9,10 @@ use App\Models\Tracking;
 class Tracking extends Model
 {
     use HasFactory;
-    protected $fillable = ['inventory_id', 'time', 'day', 'date', 'type', 'amount'];
+    protected $fillable = ['inventory_id', 'borrower', 'leasefee', 'address', 'daterent', 'returndue'];
 
     public function inventory() {
         // return $this->hasMany('App\Models\Inventory');
-        return $this->belongsTo('App\Models\Inventory');
+       return $this->belongsTo('App\Models\Inventory');
     }
 }

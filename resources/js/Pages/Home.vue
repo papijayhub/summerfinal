@@ -1,12 +1,15 @@
 <template>
-  <h1>Take me Homes</h1>
-  {{message}}
+  <h1 class="text-center">Take me Homes</h1>
+  <!-- {{message}}
   <p>
     <button @click="decrement">-</button>
   {{number}}
   <button @click="increment">+</button>
 
-  </p>
+  </p> -->
+
+
+
 </template>
 
 <script setup>

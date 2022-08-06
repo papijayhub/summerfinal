@@ -1,4 +1,5 @@
 <template>
+<div class="text-center">
 <h1>Contact Us</h1>
 <hr>
    <p>
@@ -6,6 +7,7 @@
    #143 On the way to pantalan, atbang merkado, Tubigon City <br>
    Mobile: +63912345
    </p>
+</div>
 </template>
 
 <script setup>

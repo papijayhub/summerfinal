@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Carbon\Carbon;
 
 class TrackingSeeder extends Seeder
 {
@@ -18,27 +19,27 @@ class TrackingSeeder extends Seeder
             [
                [
                 'inventory_id' => 1,
-               'time' => 'oneoclock',
-               'day' => 'monday',
-               'date' => 'waydate',
-               'type' => 'gwapa',
-               'amount' => 12.4
+               'borrower' => 'Yuko Nah',
+               'leasefee' => '160',
+               'address' => 'Ohayo Japan',
+               'daterent' => Carbon::now(),
+               'returndue' => '1900-01-04'
                ],
                [
                 'inventory_id' => 2,
-               'time' => 'eightoclock',
-               'day' => 'sunday',
-               'date' => 'datedate',
-               'type' => 'sad boy',
-               'amount' => 1.0
+               'borrower' => 'Josh Tokita',
+               'leasefee' => '143',
+               'address' => 'datedate',
+               'daterent' => Carbon::now(),
+               'returndue' => '1900-01-05'
                ],
                [
                 'inventory_id' => 3,
-               'time' => 'eightoclock',
-               'day' => 'sunday',
-               'date' => 'datedate',
-               'type' => 'sad boy',
-               'amount' => 1.0
+               'borrower' => 'John Kamali',
+               'leasefee' => '154',
+               'address' => 'datedate',
+               'daterent' => Carbon::now(),
+               'returndue' => '1900-01-06'
                ]
             ];
             foreach($track as $is) {

@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('inventories', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->integer('stock');
             $table->string('type');
             $table->string('size');
             $table->mediumText('description');

@@ -16,11 +16,11 @@ return new class extends Migration
         Schema::create('trackings', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('inventory_id');
-            $table->string('time');
-            $table->string('day');
-            $table->string('date');
-            $table->string('type');
-            $table->float('amount');
+            $table->string('borrower');
+            $table->string('leasefee');
+            $table->string('address');
+            $table->dateTime('daterent');
+            $table->date('returndue');
             $table->timestamps();
         });
     }
